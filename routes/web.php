@@ -29,6 +29,7 @@ Route::get ('/about', [AboutController::class,'about']);
 Route::get('/articles/{article}', [ArticleController::class,'articles']);
 Route::get('/user/{name?}', [AboutController::class,'user']);
 Route::resource('photos',PhotoController::class); 
+Route::get('/greeting', [WelcomeController::class,'greeting']);
 
 
 
